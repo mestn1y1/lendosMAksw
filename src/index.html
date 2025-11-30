@@ -1,23 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>LED Control Systems — Модули управления подсветкой</title>
   </head>
+
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">LED Control</div>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+        <nav class="nav">
+          <a href="#hero">Главная</a>
+          <a href="#products">Решения</a>
+          <a href="#about">Почему мы</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#prodphotos">Продукция</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="./video/video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content">
+        <div class="title">
+          Интеллектуальные модули управления LED-подсветкой
+        </div>
+        <div class="subtitle">
+          Технологии точного света для бизнеса, архитектуры и промышленности
+        </div>
+      </div>
+    </section>
 
-    <load src="./partials/footer.html" />
+    <!-- PRODUCTS -->
+    <section id="products" class="section fade-in">
+      <h2>Наши решения</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Световые контроллеры</h3>
+          <p>Управление светом от простых RGB до сложных DMX-сетей.</p>
+        </div>
+        <div class="feature">
+          <h3>Умные драйверы</h3>
+          <p>Высокая стабильность, защита от перегрузок, гибкие профили.</p>
+        </div>
+        <div class="feature">
+          <h3>IoT-модули</h3>
+          <p>Поддержка Wi-Fi, BLE, MQTT. Управление из облака.</p>
+        </div>
+      </div>
+    </section>
 
-    <script type="module" src="./main.js"></script>
+    <!-- ABOUT -->
+    <section id="about" class="section fade-in">
+      <h2>Почему выбирают нас</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Инженерная точность</h3>
+          <p>Каждый модуль проходит 5 уровней тестирования.</p>
+        </div>
+        <div class="feature">
+          <h3>Современный дизайн</h3>
+          <p>Миниатюрные корпуса, индустриальный стиль, адаптация под OEM.</p>
+        </div>
+        <div class="feature">
+          <h3>Поддержка 24/7</h3>
+          <p>Помощь инженеров в интеграции и настройке световых систем.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section fade-in">
+      <h2>Галерея</h2>
+      <div class="gallery">
+        <img src="images/gal1.jpg" alt="" />
+        <img src="images/gal2.jpg" alt="" />
+        <img src="images/gal3.jpg" alt="" />
+        <img src="images/gal4.jpg" alt="" />
+        <img src="images/gal5.jpg" alt="" />
+        <img src="images/gal6.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- PRODUCT PHOTOS -->
+    <section id="prodphotos" class="section fade-in">
+      <h2>Продукция</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/prod1.jpg" alt="" />
+          <h3>Контроллер RGB-DMX</h3>
+          <p>Высокоточный модуль управления световыми сценами.</p>
+        </div>
+
+        <div class="product">
+          <img src="images/prod2.jpg" alt="" />
+          <h3>Умный драйвер LED</h3>
+          <p>Надежная система питания с цифровой калибровкой.</p>
+        </div>
+
+        <div class="product">
+          <img src="images/prod3.jpg" alt="" />
+          <h3>Wi-Fi IoT модуль</h3>
+          <p>Управление через мобильное приложение и облако.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section fade-in">
+      <h2>Отзывы клиентов</h2>
+      <div class="reviews">
+        <div class="review">
+          <p>
+            “Отличное качество и точное управление светом. Используем в
+            архитектурных проектах.”
+          </p>
+          <span>— Студия LightCraft</span>
+        </div>
+
+        <div class="review">
+          <p>“Надежные модули, быстрое подключение, техподдержка на уровне.”</p>
+          <span>— LED Solutions</span>
+        </div>
+
+        <div class="review">
+          <p>
+            “Идеально подходит для наших IoT-платформ. Сотрудничаем уже 2 года.”
+          </p>
+          <span>— SmartHome Labs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section fade-in">
+      <h2>FAQ — Частые вопросы</h2>
+
+      <div class="faq">
+        <div class="faq-item">
+          <div class="faq-question">Как интегрировать ваши контроллеры?</div>
+          <div class="faq-answer">
+            Мы предоставляем подробную документацию, схемы и SDK.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Есть ли гарантия?</div>
+          <div class="faq-answer">
+            Да, гарантия 24 месяца на всё оборудование.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Поддерживаете ли DMX и DALI?</div>
+          <div class="faq-answer">
+            Да, есть модули с поддержкой DMX512, DALI и ArtNet.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="section fade-in">
+      <h2>Связаться с нами</h2>
+      <form class="form">
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Сообщение" required></textarea>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
